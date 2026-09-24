@@ -1,0 +1,49 @@
+# ==============================================================================
+# FastAPI / Python Project .gitignore
+# ==============================================================================
+
+# Python Caches & Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments (Dependencies)
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Configuration & Secrets (CRITICAL: Never commit your secrets!)
+.env
+.env.*
+!.env.example
+secrets.json
+
+# Local Databases (FastAPI Dev Defaults)
+*.db
+*.sqlite3
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+.mypy_cache/
+
+# Logging
+logs/
+*.log
+
+# IDEs & Text Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System Files
+.DS_Store
+Thumbs.db
